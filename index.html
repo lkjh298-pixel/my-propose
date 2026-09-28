@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f1eb">
+<meta name="description" content="H.S ♡ H.J — A little gift for our future.">
+<title>H.S ♡ H.J — For You, Always.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f2ec;--paper:#fffdfa;--ink:#2d2926;--muted:#81766e;--gold:#b89b72;--gold2:#d6c2a4;--line:#ded3c8;--rose:#ead9d1;--shadow:0 22px 60px rgba(54,40,30,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Nanum Myeongjo',serif}button,a{font:inherit}.page{min-height:100svh;display:none;position:relative}.page.active{display:flex}.serif{font-family:'Playfair Display','Nanum Myeongjo',serif}.eyebrow{font-family:'Playfair Display',serif;letter-spacing:.38em;font-size:11px;color:var(--gold)}
+/* ambient welcome */
+.welcome{align-items:center;justify-content:center;text-align:center;overflow:hidden;background:radial-gradient(circle at 50% 42%,#fffdfb 0,#f7f2ec 52%,#eee2d9 100%)}
+.welcome-inner{width:min(760px,92%);padding:48px 20px;position:relative;z-index:3}.initials{font-family:'Playfair Display',serif;font-size:20px;letter-spacing:.22em;color:#8f765c;margin-bottom:28px;animation:fadeUp 1.5s both}.initials span{color:var(--gold);font-size:17px}.welcome-heart{font-size:42px;line-height:1;color:var(--gold);margin:18px auto 18px;opacity:.9;animation:heartPulse 3.2s ease-in-out infinite}.welcome h1{font-size:clamp(39px,7vw,74px);font-weight:400;letter-spacing:-.055em;line-height:1.22;margin:0 0 25px;animation:fadeUp 2.2s .25s both}.welcome-copy{font-size:17px;line-height:2.05;color:#625850;margin:0 auto 35px;animation:fadeUp 2s .7s both}.signature{font-family:'Gowun Batang',serif;font-size:14px;color:var(--muted);margin-bottom:34px;animation:fadeUp 2s 1s both}.btn{border:1px solid #b9aa9b;background:rgba(255,253,250,.45);color:#4b423c;padding:14px 28px;cursor:pointer;transition:.3s;letter-spacing:.02em}.btn:hover{background:var(--paper);transform:translateY(-2px);box-shadow:0 8px 22px rgba(60,45,35,.08)}.btn.dark{background:#302b27;color:#fff;border-color:#302b27}.btn.dark:hover{background:#423a34}.sound-toggle{position:absolute;right:20px;top:20px;border:1px solid #d8ccc0;background:rgba(255,253,250,.6);color:#8b7868;border-radius:999px;padding:7px 11px;font-size:10px;letter-spacing:.08em;z-index:5;cursor:pointer}.sound-toggle.on{background:#302b27;color:#fff;border-color:#302b27}.back-home{position:absolute;left:20px;top:20px;border:0;background:none;color:#9a8c81;font-size:11px;letter-spacing:.12em;cursor:pointer;z-index:5}
+.petals,.lights{position:absolute;inset:0;pointer-events:none;overflow:hidden}.petal{position:absolute;width:8px;height:13px;border-radius:70% 30% 70% 30%;background:rgba(210,177,170,.36);filter:blur(.2px);animation:drift linear infinite}.petal:nth-child(1){left:10%;top:-5%;animation-duration:18s}.petal:nth-child(2){left:25%;top:-8%;animation-duration:23s;animation-delay:4s;transform:scale(.7)}.petal:nth-child(3){left:70%;top:-5%;animation-duration:20s;animation-delay:2s;transform:scale(.8)}.petal:nth-child(4){left:88%;top:-10%;animation-duration:25s;animation-delay:6s;transform:scale(.65)}.petal:nth-child(5){left:50%;top:-7%;animation-duration:28s;animation-delay:10s;transform:scale(.55)}.light{position:absolute;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,.32);filter:blur(25px);animation:glow 10s ease-in-out infinite}.light:nth-child(1){left:8%;top:25%}.light:nth-child(2){right:10%;top:60%;animation-delay:3s}.light:nth-child(3){left:45%;bottom:-4%;animation-delay:5s}
+@keyframes drift{0%{transform:translate3d(0,-10vh,0) rotate(0)}100%{transform:translate3d(80px,115vh,0) rotate(280deg)}}@keyframes glow{0%,100%{opacity:.15;transform:scale(.8)}50%{opacity:.45;transform:scale(1.25)}}@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+/* selection */
+.select{flex-direction:column}.nav{position:sticky;top:0;z-index:20;background:rgba(247,242,236,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:16px 5%;display:flex;align-items:center;justify-content:center}.nav .brand{font-family:'Playfair Display',serif;letter-spacing:.18em;font-size:12px}.nav .step{position:absolute;right:5%;font-size:10px;color:var(--muted);letter-spacing:.12em}.content{width:min(1180px,92%);margin:0 auto;padding:48px 0 125px}.top-back{position:absolute;left:5%;top:14px;z-index:25;border:0;background:none;color:#8b7d73;font-size:11px;cursor:pointer;letter-spacing:.05em}.title{text-align:center;margin-bottom:36px}.title h2{font-size:34px;font-weight:400;margin:0 0 10px;letter-spacing:-.03em}.title p{color:var(--muted);font-size:13px;line-height:1.8}.tabs{display:flex;justify-content:center;gap:8px;margin:28px 0 40px}.tab{border:1px solid var(--line);background:transparent;padding:11px 30px;color:var(--muted);cursor:pointer;font-family:'Playfair Display',serif;font-size:12px;letter-spacing:.08em}.tab.active{background:#302b27;color:#fff;border-color:#302b27}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:rgba(255,253,249,.72);border:1px solid var(--line);cursor:pointer;position:relative;transition:.3s;overflow:hidden}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card.selected{border:1.5px solid var(--gold);box-shadow:0 0 0 3px rgba(184,155,114,.13)}.pic{aspect-ratio:1/1;background:linear-gradient(145deg,#f2eee9,#e8e0d8);display:flex;align-items:center;justify-content:center;overflow:hidden}.pic img{width:100%;height:100%;object-fit:contain;padding:15px;display:block}.pic.photo img{object-fit:cover;padding:0}.fallback{padding:24px;text-align:center;color:#8d8177;font-size:12px;line-height:1.8}.info{padding:17px 18px 20px}.maker{font-family:'Playfair Display',serif;font-size:10px;letter-spacing:.18em;color:var(--gold);margin-bottom:7px}.name{font-size:15px;line-height:1.55}.material{font-size:11px;color:var(--muted);margin-top:7px;line-height:1.6}.check{position:absolute;right:12px;top:12px;width:30px;height:30px;border-radius:50%;border:1px solid #d6c7ba;background:rgba(255,253,249,.94);display:grid;place-items:center;color:transparent;transition:.25s}.card.selected .check{background:var(--gold);border-color:var(--gold);color:#fff}.official{display:inline-block;margin-top:11px;color:#8a7563;font-size:10px;text-decoration:underline}.bottom{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:13px 5%;background:rgba(255,253,249,.95);border-top:1px solid var(--line);display:flex;justify-content:center;backdrop-filter:blur(12px)}.confirm:disabled{opacity:.35;cursor:not-allowed}
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;background:rgba(38,31,27,.34);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:22px}.modal.show{display:flex}.modal-box{width:min(420px,100%);background:var(--paper);padding:38px 28px 30px;text-align:center;box-shadow:0 30px 80px rgba(20,15,12,.22);animation:modalIn .4s both}.modal-symbol{font-family:'Playfair Display',serif;color:var(--gold);font-size:28px;margin-bottom:13px}.modal h3{font-size:23px;font-weight:400;margin:0 0 9px}.modal p{font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 25px}.modal-actions{display:flex;gap:9px;justify-content:center}.modal-actions button{min-width:130px}.money-sprinkles{position:absolute;inset:0;pointer-events:none;overflow:hidden}.money-sprinkles span{position:absolute;top:-24px;font-family:'Playfair Display',serif;color:rgba(184,155,114,.7);font-size:18px;animation:moneyDrop 3.8s ease-in infinite}.money-sprinkles span:nth-child(1){left:12%;animation-delay:.1s;font-size:15px}.money-sprinkles span:nth-child(2){left:27%;animation-delay:1.1s;font-size:21px}.money-sprinkles span:nth-child(3){left:46%;animation-delay:.55s;font-size:13px}.money-sprinkles span:nth-child(4){left:68%;animation-delay:1.7s;font-size:19px}.money-sprinkles span:nth-child(5){left:84%;animation-delay:.9s;font-size:14px}.money-sprinkles span:nth-child(6){left:57%;animation-delay:2.2s;font-size:16px}@keyframes moneyDrop{0%{transform:translateY(-25px) rotate(-8deg) scale(.7);opacity:0}15%{opacity:1}70%{opacity:.8}100%{transform:translateY(235px) rotate(18deg) scale(1.05);opacity:0}}.money-bounce{display:inline-block;animation:moneyBounce 1.8s ease-in-out infinite}@keyframes moneyBounce{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-5px) rotate(-4deg)}}@keyframes modalIn{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+/* final */
+.final{align-items:center;justify-content:center;text-align:center;padding:55px 20px;overflow:hidden;background:radial-gradient(circle at 50% 35%,#fffdfb 0,#f7f2ec 60%,#eee2d9 100%)}.final-inner{width:min(700px,100%);position:relative;z-index:3}.final .small{font-family:'Playfair Display',serif;font-size:11px;letter-spacing:.3em;color:var(--gold);margin-bottom:22px}.final h2{font-size:clamp(34px,6vw,48px);font-weight:400;margin:0 0 10px}.date{font-family:'Playfair Display',serif;color:#9a8775;font-size:12px;letter-spacing:.15em;margin-bottom:20px}.chosen{margin:24px auto;background:rgba(255,253,249,.88);border:1px solid var(--line);padding:16px;max-width:390px;box-shadow:0 20px 55px rgba(54,40,30,.08)}.chosen img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#eee9e4;padding:12px}.chosen .maker{margin-top:15px}.heart-main{font-size:26px;color:var(--gold);margin:14px}.final p{line-height:2;color:#665b54;font-size:14px}.final .again{margin-top:20px}.floating-hearts{position:absolute;inset:0;pointer-events:none;overflow:hidden}.fh{position:absolute;bottom:-30px;color:rgba(184,155,114,.45);font-size:18px;animation:floatHeart 9s linear infinite}.fh:nth-child(1){left:12%;animation-delay:0s}.fh:nth-child(2){left:31%;animation-delay:2.4s;font-size:13px}.fh:nth-child(3){left:53%;animation-delay:5s;font-size:22px}.fh:nth-child(4){left:76%;animation-delay:1.4s;font-size:15px}.fh:nth-child(5){left:90%;animation-delay:6s;font-size:12px}@keyframes floatHeart{0%{transform:translateY(0) rotate(-8deg);opacity:0}15%{opacity:.7}100%{transform:translateY(-115vh) rotate(18deg);opacity:0}}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr);gap:13px}.content{padding-top:38px}.card .info{padding:13px}.name{font-size:13px}.title h2{font-size:29px}.nav{justify-content:flex-end;padding-right:5%}.nav .brand{position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap}.nav .step{display:none}.top-back{left:14px}.pic{aspect-ratio:1/1}.pic img{padding:10px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.welcome-copy{font-size:15px}.welcome h1{font-size:40px}.content{width:91%;padding-bottom:120px}.final h2{font-size:34px}.chosen{max-width:330px}.tabs{margin-bottom:28px}.tab{padding:10px 25px}.modal-actions{flex-direction:column}.modal-actions button{width:100%}}
+@keyframes heartPulse{0%,100%{transform:scale(1);opacity:.72}50%{transform:scale(1.08);opacity:1}}\n</style>
+</head>
+<body>
+<!-- PAGE 1 -->
+<section id="p1" class="page welcome active">
+  <div class="petals"><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i></div>
+  <div class="lights"><i class="light"></i><i class="light"></i><i class="light"></i></div>
+  <button class="back-home" onclick="go(1)">H.S ♡ H.J</button><button id="soundToggle" class="sound-toggle" onclick="toggleMusic()">♪ MUSIC</button>
+  <div class="welcome-inner">
+    <div class="initials">H.S <span>♡</span> H.J</div>
+    <div class="eyebrow">A LITTLE GIFT FOR OUR FUTURE</div>
+    <div class="welcome-heart" aria-hidden="true">♡</div>
+    <h1>나와 결혼해줘서<br>고마워.</h1>
+    <p class="welcome-copy">평생 함께하고 싶은 사람에게<br>조금 특별한 선물을 준비했어.<br><br>내가 고르는 것보다,<br><b>네가 가장 마음에 드는 것을 직접 골랐으면 좋겠어.</b></p>
+    <div class="signature">From, your future husband ♡</div>
+    <button class="btn dark" onclick="go(2)">선물 고르러 가기</button>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="p2" class="page select">
+  <div class="nav">
+    <button class="top-back" onclick="go(1)">← 처음으로</button>
+    <div class="brand">FOR YOU, ALWAYS.</div>
+    <div class="step">STEP 02 · YOUR CHOICE</div>
+  </div>
+  <main class="content">
+    <div class="title"><h2>당신을 위한 선물</h2><p>천천히 둘러보고, 가장 갖고 싶은 하나를 골라줘.</p></div>
+    <div class="tabs"><button class="tab active" data-cat="bag">HANDBAG</button><button class="tab" data-cat="necklace">NECKLACE</button></div>
+    <div id="grid" class="grid"></div>
+  </main>
+  <div class="bottom"><button id="confirm" class="btn dark confirm" disabled>이걸로 할게 ♡</button></div>
+</section>
+
+<!-- PAGE 3 -->
+<section id="p3" class="page final">
+  <div class="floating-hearts"><i class="fh">♡</i><i class="fh">♡</i><i class="fh">♡</i><i class="fh">♡</i><i class="fh">♡</i></div>
+  <button class="back-home" onclick="go(2)">← 다시 고르기</button>
+  <div class="final-inner">
+    <div class="small">YOUR CHOICE IS MADE</div>
+    <h2>좋아, 이걸로 하자.</h2>
+    <div id="proposalDate" class="date"></div>
+    <div class="heart-main">♡</div>
+    <div id="chosen" class="chosen"></div>
+    <p>네가 고른 선물은<br><b>우리 같이 백화점에 가서 직접 골라보자.</b><br>그리고 이 선물보다 더 오래 간직하고 싶은 건<br><b>앞으로 너와 함께할 모든 순간이야.</b><br><br>우리의 다음 장면들도 하나씩 같이 만들어가자.</p>
+    <button class="btn again" onclick="go(2)">다시 고르기</button>
+  </div>
+</section>
+
+<!-- confirmation -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <div class="modal-symbol">♡</div>
+    <h3 id="modalTitle">정말 이걸로 할래?</h3>
+    <p>네가 고른 선물로 기억해둘게.<br>다음 화면에서 최종 선택을 확인할 수 있어.</p>
+    <div class="modal-actions"><button class="btn" onclick="closeModal()">조금 더 볼래</button><button class="btn dark" onclick="finalizeChoice()">응, 이걸로 할래 ♡</button></div>
+  </div>
+</div>
+
+<!-- special handbag message -->
+<div id="chanelNote" class="modal" role="dialog" aria-modal="true" aria-labelledby="chanelNoteTitle">
+  <div class="modal-box" style="position:relative;overflow:hidden">
+    <div class="money-sprinkles" aria-hidden="true"><span>₩</span><span>₩</span><span>♡</span><span>₩</span><span>♡</span><span>₩</span></div>
+    <div class="modal-symbol money-bounce">♡</div>
+    <h3 id="chanelNoteTitle">잠깐만…</h3>
+    <p>미안, 나중에 돈 많이 벌어서 사줄께^^;;</p>
+    <div class="modal-actions"><button class="btn dark" onclick="backFromChanelNote()">다시 고르기</button></div>
+  </div>
+</div>
+
+<script>
+const products=[
+ {cat:'bag',brand:'CHANEL',name:'클래식 스몰 플랩 백',detail:'블랙 & 버건디 · 그레인드 카프스킨 · 골드 메탈',url:'https://www.chanel.com/kr/fashion/p/A01113Y01864C3906/small-classic-handbag-grained-calfskin-gold-tone-metal/',img:'images/chanel-classic.png'},
+ {cat:'bag',brand:'CHANEL',name:'스몰 플랩 백',detail:'2026 F/W · 램스킨 & 카프스킨 · 골드 메탈 · 블랙',url:'https://www.chanel.com/kr/fashion/p/AS6625B2621494305/small-flap-bag-lambskin-calfskin-gold-tone-metal/',img:'images/chanel-fw26.png'},
+ {cat:'bag',brand:'DIOR',name:'Lady Dior 미디엄 백',detail:'블랙 까나쥬 · 양가죽',url:'https://www.dior.com/ko_kr/fashion/products/M0565ONGE_M900',img:'images/dior-lady.png'},
+ {cat:'bag',brand:'DIOR',name:'Dior Toujours 미디엄 백',detail:'블랙 플랫 매크로까나쥬 · 송아지 가죽',url:'https://www.dior.com/ko_kr/fashion/products/M2821OCUQ_M900',img:'images/dior-toujours.png'},
+ {cat:'bag',brand:'DIOR',name:'Dior Bobby 미디엄 백',detail:'블랙 · 그레인 송아지 가죽',url:'https://www.dior.com/ko_kr/fashion/products/M9337USKU_M900',img:'images/dior-bobby.png'},
+ {cat:'bag',brand:'CELINE',name:'미디엄 트리옹프 아바 백',detail:'부드러운 카프스킨 · 블랙',url:'https://www.celine.com/ko-kr/%EC%97%AC%EC%84%B1/%ED%95%B8%EB%93%9C%EB%B0%B1/%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84-%EC%BA%94%EB%B2%84%EC%8A%A4/%EB%AF%B8%EB%94%94%EC%97%84-%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84-%EC%95%84%EB%B0%94-%EB%B0%B1---%EB%B6%80%EB%93%9C%EB%9F%AC%EC%9A%B4-%EC%B9%B4%ED%94%84%EC%8A%A4%ED%82%A8-114493DGQ.38NO.html',img:'images/celine-ava-black.png'},
+ {cat:'bag',brand:'CELINE',name:'미디엄 트리옹프 아바 백',detail:'트리옹프 캔버스 & 카프스킨 · 탠',url:'https://www.celine.com/ko-kr/%EC%97%AC%EC%84%B1/%ED%95%B8%EB%93%9C%EB%B0%B1/%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84-%EC%BA%94%EB%B2%84%EC%8A%A4-2/%EB%AF%B8%EB%94%94%EC%97%84-%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84-%EC%95%84%EB%B0%94-%EB%B0%B1---%ED%8A%B8%EB%A6%AC%EC%98%B9%ED%94%84-%EC%BA%94%EB%B2%84%EC%8A%A4-and-%EC%B9%B4%ED%94%84%EC%8A%A4%ED%82%A8-114492BZJ.04LU.html',img:'images/celine-ava-tan.png'},
+ {cat:'necklace',brand:'VAN CLEEF & ARPELS',name:'빈티지 알함브라 펜던트',detail:'18K 화이트 골드 · 화이트 마더오브펄',url:'https://www.vancleefarpels.com/kr/ko/collections/jewelry/alhambra/vcarf48700---vintage-alhambra-pendant.html',img:'images/vca-vintage.png'},
+ {cat:'necklace',brand:'VAN CLEEF & ARPELS',name:'스위트 알함브라 펜던트',detail:'18K 화이트 골드 · 다이아몬드',url:'https://www.vancleefarpels.com/kr/ko/collections/jewelry/alhambra/vcaro85900---sweet-alhambra-pendant.html',img:'images/vca-sweet.png'},
+ {cat:'necklace',brand:'CHANEL',name:'COCO CRUSH 네크리스',detail:'18K 화이트 골드 · 스몰 모델',url:'https://www.chanel.com/kr/fine-jewelry/p/J12307/coco-crush-necklace/',img:'images/chanel-coco.png'},
+ {cat:'necklace',brand:'BVLGARI',name:'디바스 드림 네크리스',detail:'18K 로즈 골드 · 마더오브펄 · 다이아몬드 1개',url:'https://www.bulgari.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%84%A4%ED%81%AC%EB%A6%AC%EC%8A%A4/%EB%94%94%EB%B0%94%EC%8A%A4-%EB%93%9C%EB%A6%BC-%EB%84%A4%ED%81%AC%EB%A6%AC%EC%8A%A4-%EB%A1%9C%EC%A6%88-%EA%B3%A8%EB%93%9C-%ED%99%94%EC%9D%B4%ED%8A%B8-350062',img:'images/bulgari-divas.png'},
+ {cat:'necklace',brand:'BVLGARI',name:'비제로원 네크리스',detail:'18K 화이트 골드 · 체인 & 펜던트',url:'https://www.bulgari.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%84%A4%ED%81%AC%EB%A6%AC%EC%8A%A4/%EB%B9%84%EC%A0%9C%EB%A1%9C%EC%9B%90-%EB%84%A4%ED%81%AC%EB%A6%AC%EC%8A%A4-%ED%99%94%EC%9D%B4%ED%8A%B8-%EA%B3%A8%EB%93%9C-360310',img:'images/bulgari-bzero1.png'},
+ {cat:'necklace',brand:'TIFFANY & CO.',name:'티파니 노트 스몰 펜던트',detail:'18K 로즈 골드 · 다이아몬드 세팅',url:'https://www.tiffany.kr/jewelry/necklaces-pendants/tiffany-knot-18k-rose-gold-diamond-necklaces-pendants-75123566.html',img:'images/tiffany-knot.png'},
+ {cat:'necklace',brand:'TIFFANY & CO.',name:'티파니 T 스마일 스몰 펜던트',detail:'18K 화이트 골드',url:'https://www.tiffany.kr/jewelry/necklaces-pendants/tiffany-t-18k-white-gold-necklaces-pendants-60011677.html',img:'images/tiffany-t.png'},
+ {cat:'necklace',brand:'CARTIER',name:'트리니티 펜던트',detail:'미디엄 모델 · 다이아몬드',url:'https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%84%A4%ED%81%AC%EB%A6%AC%EC%8A%A4/%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0/%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0-%ED%8E%9C%EB%8D%98%ED%8A%B8-%EB%AF%B8%EB%94%94%EC%97%84-%EB%AA%A8%EB%8D%B8-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C-CRB7224814.html',img:'images/cartier-trinity.png'},
+ {cat:'necklace',brand:'CARTIER',name:'LOVE 펜던트',detail:'18K 화이트 골드 · 다이아몬드 2개',url:'https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%84%A4%ED%81%AC%EB%A6%AC%EC%8A%A4/love/love--%ED%8E%9C%EB%8D%98%ED%8A%B8-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C-2%EA%B0%9C-CRB7219400.html',img:'images/cartier-love.png'},
+];
+let cat='bag',selected=null;const grid=document.getElementById('grid');const confirmBtn=document.getElementById('confirm');const modal=document.getElementById('modal');
+function makeImg(p){
+  const img=document.createElement('img');img.alt=p.brand+' '+p.name;img.loading='lazy';img.decoding='async';img.src=p.img;
+  img.onerror=()=>{img.style.display='none';const f=document.createElement('div');f.className='fallback';f.innerHTML='<div style="font-size:27px;margin-bottom:8px">♡</div>첨부된 상품 이미지를 불러오지 못했어요.<br>아래 한국 공식 페이지에서 확인할 수 있어요.';img.parentElement.appendChild(f)};
+  return img;
+}
+let audioCtx=null, master=null, musicOn=false, musicTimer=null;
+function startMusic(){
+ if(musicOn)return;
+ const AC=window.AudioContext||window.webkitAudioContext; if(!AC)return;
+ audioCtx=audioCtx||new AC(); master=master||audioCtx.createGain(); master.gain.value=.035; master.connect(audioCtx.destination);
+ musicOn=true; document.getElementById('soundToggle').classList.add('on'); document.getElementById('soundToggle').textContent='♪ MUSIC ON';
+ const notes=[261.63,329.63,392,523.25,392,329.63,293.66,349.23,440,523.25,440,349.23]; let i=0;
+ const play=()=>{ if(!musicOn)return; const o=audioCtx.createOscillator(), g=audioCtx.createGain(); o.type='sine'; o.frequency.value=notes[i++%notes.length]; g.gain.setValueAtTime(0,audioCtx.currentTime); g.gain.linearRampToValueAtTime(.22,audioCtx.currentTime+.7); g.gain.exponentialRampToValueAtTime(.001,audioCtx.currentTime+3.8); o.connect(g);g.connect(master);o.start();o.stop(audioCtx.currentTime+4); musicTimer=setTimeout(play,1800)}; play();
+}
+function stopMusic(){musicOn=false; if(musicTimer)clearTimeout(musicTimer); if(master)master.gain.setTargetAtTime(0,audioCtx.currentTime,.15); document.getElementById('soundToggle').classList.remove('on');document.getElementById('soundToggle').textContent='♪ MUSIC';}
+function toggleMusic(){musicOn?stopMusic():startMusic()}
+function render(){
+ grid.innerHTML='';
+ products.filter(p=>p.cat===cat).forEach(p=>{
+  const c=document.createElement('article');c.className='card'+(selected===p?' selected':'');
+  const pic=document.createElement('div');pic.className='pic';pic.appendChild(makeImg(p));
+  c.innerHTML='<div class="check">✓</div><div class="info"><div class="maker"></div><div class="name"></div><div class="material"></div><a class="official" target="_blank" rel="noopener">공식 상품 페이지 ↗</a></div>';
+  c.prepend(pic);c.querySelector('.maker').textContent=p.brand;c.querySelector('.name').textContent=p.name;c.querySelector('.material').textContent=p.detail;c.querySelector('.official').href=p.url;
+  c.querySelector('.official').onclick=e=>e.stopPropagation();c.onclick=()=>{selected=p;render();confirmBtn.disabled=false;};grid.appendChild(c);
+ });
+}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');cat=b.dataset.cat;render();});
+confirmBtn.onclick=()=>{if(selected){modal.classList.add('show')}};
+function closeModal(){modal.classList.remove('show');document.getElementById('chanelNote').classList.remove('show')}
+function finalizeChoice(){
+ if(!selected)return;
+ closeModal();
+ // 샤넬 핸드백 또는 Lady Dior 미디엄 백을 선택한 경우에는 최종 페이지 대신 특별 안내를 보여준다.
+ if(selected.cat==='bag' && (selected.brand==='CHANEL' || (selected.brand==='DIOR' && selected.name==='Lady Dior 미디엄 백'))){
+   document.getElementById('chanelNote').classList.add('show');
+   return;
+ }
+ localStorage.setItem('proposalChoice',JSON.stringify(selected));
+ document.getElementById('chosen').innerHTML='';const img=makeImg(selected);document.getElementById('chosen').appendChild(img);
+ const info=document.createElement('div');info.innerHTML='<div class="maker"></div><div class="name"></div><div class="material"></div>';info.querySelector('.maker').textContent=selected.brand;info.querySelector('.name').textContent=selected.name;info.querySelector('.material').textContent=selected.detail;document.getElementById('chosen').appendChild(info);
+ document.getElementById('proposalDate').textContent=new Intl.DateTimeFormat('ko-KR',{year:'numeric',month:'long',day:'numeric'}).format(new Date());go(3);
+}
+function backFromChanelNote(){
+ document.getElementById('chanelNote').classList.remove('show');
+ selected=null;
+ confirmBtn.disabled=true;
+ render();
+ go(2);
+}
+function go(n){if(n===2)startMusic();document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById('p'+n).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});if(n!==2) closeModal();}
+window.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+render();
+</script>
+</body>
+</html>
